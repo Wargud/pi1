@@ -1,0 +1,21 @@
+<h1>Losowe Liczby Parzyste:</h1>
+<ul>
+    <?php foreach ($this->Liczby as $i => $liczba): ?>
+        <?php if($liczba%2 == 0): ?>
+        <li>
+            <?=$liczba ?>
+        </li>
+        <?php endif ?>
+    <?php endforeach ?>
+</ul>
+
+<h1>Losowe Liczby Nieparzyste:</h1>
+<ul>
+    <?php foreach ($this->Liczby as $i => $liczba): ?>
+        <?php if($liczba%2 != 0): ?>
+        <li>
+            <?=$liczba ?>
+        </li>
+        <?php endif ?>
+    <?php endforeach ?>
+</ul>
